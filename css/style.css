@@ -1,0 +1,557 @@
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{
+	background: radial-gradient(#ffffff, #373637);
+	background: url(../images/blood2.jpg) no-repeat center center fixed;
+	background-size: cover;
+	color: #fff;
+	font-size: 12px;
+	font-family:'NotoKufiArabic-Bold', sans-serif;
+	direction: var(--mainlang);
+	overflow-x: hidden;
+}
+@font-face{ font-family:NotoKufiArabic-Bold;
+	src: url('../fonts/NotoKufiArabic-Bold.ttf')}
+/* Start Div Too Box  */
+:root
+{
+    --maincolor: rgb(51, 51, 51);
+    --mainlang:ltr;
+}
+.tool_box{margin: 61px 55px;position: fixed;z-index: 9;left: 0;}
+.tool_box .gear-check{
+    margin-left: -40px;
+    cursor: pointer;
+    padding: 2px;
+    background: var(--maincolor);
+    font-size: 3em;
+    direction: ltr;
+    float: left;
+}
+.tool_box .switch_colors,.tool_box .switch_languages{
+	margin-top: 1px;
+	display: none;
+	background: #32afb5;
+	width: max-content;
+	border: 4px solid var(--maincolor);
+	}
+.tool_box .switch_colors h5,.tool_box .switch_languages h5{padding:5px 0;margin: 0;}
+.tool_box .switch_colors ul,.tool_box .switch_languages ul{width: 160px;padding: 10px;}
+.tool_box .switch_colors ul li,.tool_box .switch_languages ul li{
+	display: inline-block;
+	padding: 12px;
+	border-radius: 12px;
+	cursor: pointer;
+}
+.tool_box .switch_colors ul #color1{background: rgba(139, 0, 0, 0.55);}
+.tool_box .switch_colors ul #color2{background: rgba(0, 0, 139, 0.55);}
+.tool_box .switch_colors ul #color3{background: rgba(128, 0, 128, 0.55);}
+.tool_box .switch_colors ul #color4{background: rgba(53, 50, 50, 0.55);}
+
+/* Start Change The Language Of Site */
+.tool_box .switch_languages{margin-top: -4px;}
+.tool_box .switch_languages ul #arabic{background: #800080;padding: 10px;}
+.tool_box .switch_languages ul #english{background: #353232;padding: 10px;}
+/* End Change The Language Of Site */
+
+/* End Div Too Box */
+
+/* Start Edit Style Of Navbar */
+nav .container-fluid{background: var(--maincolor);}
+.navbar-header{direction: rtl;}
+.navbar-nav {font-size: 18px;}
+.navbar li a.active{color: #16f8f8;}
+.navbar-toggle{float: left;}
+#mymenu li a i{padding: 0 3px;}
+@media (max-width: 798px){
+	.tool_box{margin: 53px 40px;position: fixed;z-index: 7;left: 0;}
+	.tool_box .gear-check{margin-left: -40px;}
+	.navbar{margin: 0;}
+	.navbar-nav {display: flex;}
+	.navbar-header .nav {position: absolute;right: -24px;}
+	.content {margin: 50px -15px 0 -15px;padding-right: 15px;padding-left: 15px;}
+}
+/* End Edit Style Of Navbar */
+
+
+/* Start Show Notification Donate  */
+.notification_count{color: #25eef7;}
+#notification_box{
+	position: fixed;
+	top: 53px;
+	display: none;
+	left: 340px;
+	width: 50%;
+	max-height: 50%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background: rgb(31, 30, 30);
+	z-index: 7;
+	}
+#notification_box a{color: #000;text-decoration: none;}
+.notification_div{border: 1px solid;background: chocolate;border-color: var(--maincolor) transparent;}
+.notification_div:hover{background: #fff;}
+.notification_div span{position: relative;left: 80px;top: 25px;}
+.notification_div img{width: 65px;height: 65px;border-radius: 50%;position: relative;top: -10px;left: 5px;}
+#notification_text{word-break:break-word;margin: -51px 0 0 82px;position: relative;top: 15px;}
+@media (max-width: 798px){
+	#notification_box{left: 0;width: 100%;top: 51px;}
+	.notification_div{font-size: 10px;}
+	.notification_div span{top: 4px;left: 50px;}
+	.notification_div img{ width: 35px; height: 35px; top: -14px;}
+	#notification_text{top: 23px;left: -30px;}
+}
+/* End Show Notification Donate  */
+.content{background: rgba(0, 0, 0, 0.48);min-height: 825px;}
+/* Start Style Of Chat Messenger */
+#chat_box{position: fixed;z-index: 5;top: 125px;direction: ltr;width: 23%;left: 15px;}
+.chat{
+	overflow: auto;
+	overflow-x: hidden;
+	height: 391px;
+	background: rgba(241, 246, 247, 0.85);
+	border: 1px solid green;
+	}
+.chat .user_profile{
+	border: 1px solid;
+	padding: 5px 0;
+	margin: 4px -10px;
+	border-color: transparent transparent var(--maincolor) transparent;
+	}
+.chat .user_profile a{text-decoration: none;color: #000;}
+.chat .user_profile img{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	}
+.chat .user_profile a span:nth-child(3){float: right;margin-top: 30px;}
+.chat .user_profile a span:nth-child(4){float: right;margin-top: 54px;}
+.chat .user_profile a span i{font-size: 20px;}
+.chat .user_profile strong{position: relative;bottom: 25px;}
+.chat .user_profile b{bottom: 0px;color: black;}
+#open_chat{z-index: 2;position: fixed;width: 50%;top: 89px;}
+.username_chat{
+	background-color: green;
+	border-radius: 15px 15px 0 0;
+	padding: 1px 0;
+	}
+.myName{
+	background: rgb(6, 74, 3);
+	border-radius: 15px 15px 0 0;
+	height: 50px;
+	margin: -1px -15px;
+}
+.myName h4{position: relative;top: 15px;font-size: 17px;}
+.chat_details{
+	height: 320px;
+	background: repeating-linear-gradient(45deg, #000000, #074246 30px);
+	overflow: auto;
+	overflow-x: hidden;
+	transform: rotateX(180deg);
+	direction: rtl;
+	border: 2px solid;
+	border-color: transparent green transparent #008000;
+	} 
+.user_chat_box{transform: rotateX(180deg);}
+
+.user_chat_box .float_right, .float_left{background: rgba(72, 97, 86, 0.6);
+	border-radius: 10px;padding:0 3px 0 3px;margin: 5px 15px;overflow-y: auto;overflow-x: hidden;}
+.user_chat_box .float_left{background: rgba(251, 184, 7, 0.34);}
+
+.user_chat_box .float_right img,.user_chat_box .float_left img{width: 50px; height: 50px;padding: 3px; 
+	border-radius: 50%;display: inline-block;}
+.user_chat_box .float_left img{float: left;}
+
+.user_chat_box .float_left span{float: left;direction: ltr;margin: 30px 0;}
+.user_chat_box .float_right p,.user_chat_box .float_left p{
+	background: rgba(31, 145, 139, 0.56);padding:10px;width: 80%;
+	float: right;border-radius: 15px 15px 0 0;word-wrap: break-word;margin:5px 0 10px 0;}
+.user_chat_box .float_left p{float: left;direction: ltr;margin: 40px 0 10px -80px;}
+
+.user_chat_box .message_time{
+    display: inline-block;width: 80%;position: relative;bottom: 11px;text-align: center;
+    opacity: .7;direction: ltr;}
+.user_chat_box .float_left .message_time{margin-top:0;margin-bottom:-5px; }
+
+.ellipsis-open{padding: 5px;z-index: 1;text-align: center;float: left;}
+.float_left .ellipsis-open{float: right;}
+.ellipsis-open li{border-radius: 5px;margin:10px 0;display: block;}
+.ellipsis-open li a{color: #fff;text-decoration: none;}
+
+.send_chat{
+	background-color: rgba(8, 8, 8, 0.82);
+	padding: 10px;
+	border: 2px solid;
+	border-color: transparent green red #008000;
+	}
+.send_chat textarea{height: 50px;width: 75%;background-color: rgba(253, 253, 253, 0.89);
+	color: #333;resize: none;}
+.send_chat button{    width: 22%;padding: 13px;margin-top: -37px;}
+#close_but{
+    z-index: 5;
+    font-size: 30px;
+    border-radius: 14px 0 0 0;
+    left: 0px;
+    position: relative;
+    top: 41px;
+    width: 49px;
+    height: 41px;
+    background: red;
+    border: unset;
+} 
+
+@media (max-width: 767px){
+	#chat_box {display: none;width: 100%;padding: 0;margin-left: -15px;}
+	.open_chat,#open_chat {width: 100%;left: 0;position: relative;}
+	.chat_details{height: 350px;}
+}
+@media(min-width: 768px) and (max-width: 1199px){#chat_box{width: 35%;}}
+/* Start Style Of Donation Div */
+
+/* Start Style Donate Form */
+.my_Donate_Form{background-color: rgba(21, 19, 19, 0.58);margin: 0 auto;max-width: 70%;}
+
+.my_Donate_Form {}
+.my_Donate_Form .head_image{margin: 0 auto;width: 35%;}
+.my_Donate_Form .head_image img{border-radius: 50%;}
+.my_Donate_Form #error_msg{margin: 10px;}
+.my_Donate_Form #give_blood,.my_Donate_Form #need_blood{ cursor: pointer;}
+.my_Donate_Form form{color: crimson;margin-bottom: 10px;}
+.my_Donate_Form textarea,.my_Donate_Form input,.my_Donate_Form select{width: 100%;padding: 13px 5px;margin: 2px 0;}
+.my_Donate_Form textarea{resize: none;height: 150px;}
+@media (max-width: 767px){.my_Donate_Form{min-width: 100%;}}
+/* End Style Donate Form */
+
+.donation
+{
+	position: relative;
+	margin-top: 135px;
+	margin-bottom: 100px;
+	background: rgba(0, 0, 0, 0.55);
+}
+.id_from_notification{
+	box-shadow: 4px 4px 50px 50px #f5ff00c9 inset, -4px -4px 0px 0px #ff00b1a6 inset;
+	animation: moving 5s infinite reverse 2s forwards running ease-in-out;
+}
+@keyframes moving{
+	25%{box-shadow: 4px 4px 5px 2px #fff inset, -4px -4px 5px 2px chocolate inset;}
+}
+.donation img
+{
+	border-radius: 0 13px;
+	height: 100px;
+	width: 75px;
+	height: 75px;
+	margin: 2% -7px;
+	box-shadow: 1px 1px 1px 3px #1f9789, -1px -1px 1px 3px #d3f601;
+}
+.donation .text-capitalize{margin: 0 10px;font-size: 15px;color: #fff;}
+#statuson
+{
+    position: relative;
+    top: 24px;
+    left: -22px;
+}
+#statusoff{left:10px;}
+.donation .sub_donation{display: none;}
+.donation .row{ margin-right: 0; margin-left: 0; }
+.donation .donate_head,.donation .share_date{background: var(--maincolor);padding: 0;}
+.donation .donate_head a{text-decoration: none;}
+.donation .share_date{direction: var(--mainlang);}
+.donation .donate_part .ellipsis-open{position: absolute;right: 0px;padding: 0;}
+.donation .donate_part .ellipsis-open li{margin: 0;padding: 10px;}
+.donation .donate_part .ellipsis-open li:hover{background: green;}
+#edit_donate{
+	padding: 5px 12px;
+	display: none;
+	color: #333;
+	z-index: 1;
+	position: fixed;
+	background: #dee3e4;
+	width: 45%;
+	}
+#edit_donate textarea ,#edit_donate input ,#edit_donate #sickGblood ,#edit_donate #donate_type{width: 100%;}
+@media(max-width: 768px)
+{
+	.id_from_notification{margin-bottom: 130px;}
+	#edit_donate{border-radius: 0;padding: 3px;width: 99%;margin: 0 -1px 0 0;left: 2px;}
+	.donation .donate_head{ padding: 12px 0;}
+	.donation .sub_donation{margin-top: -90px;}
+}
+.donation .share_date p{display: block;padding: 5px 0;}
+.donation .share_date p span {color: #eaf72b;}
+.donation .donate_middle{background: rgba(0, 0, 0, 0.52);line-height: 2;}
+.donation .donate_middle pre{
+	font-family: inherit;
+	background-color: unset;
+	border: 0;
+	color: inherit;
+}
+.test_agree{position: fixed;right: -19px;top: 135px;width: 24%;z-index: 6;}
+.test_agree button{
+    right: 34px;
+    position: relative;
+    z-index: 4;
+    border-radius: 4px 4px 0 0;
+    background: rgb(6, 74, 3);
+    font-size: 17px;
+    width: 100%;
+    border: 0;
+}
+.test_agree button:hover{color: #000;}
+
+.donate_footer{background: rgb(31, 151, 137, 0.75);padding: 12px 0;}
+.donate_footer a{color: #fff;text-decoration: none;}
+.donate_footer .glyphicon-envelope,.donate_footer .glyphicon-heart{
+    color: #FF9800;
+    padding: 0 5px;
+    position: relative;
+    top: 6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.not_found_post{ color: #00ff4e; position: absolute; background: var(--maincolor); padding: 20px; width: 100%;}
+/* Start Pagination */
+.page-item a{position: relative;top: -20px;padding: 6px 12px;text-decoration: none;background-color: #fff;border: 1px solid #ddd;}
+/* End Pagination */
+.donClick i{padding: 10px 2px;}
+.donation-show
+{
+	background: rgba(8, 4, 0, 0.95);
+	font-size: 12px;
+	padding: 5px;
+	right: 34px;
+	position: relative;
+	border: 10px solid rgba(0, 128, 0, 0.55);
+}
+.donation-show p
+{
+	border-radius: 10px 0;
+	padding: 15px;
+}
+.donation-show label
+{
+	border-radius: 10px 0;
+	padding: 6px;
+}
+.donation-show select
+{
+	width: 100%;
+	padding: 8px;
+	margin: 13px 0;
+	border-radius: 0 10px;
+	color: black;
+	border: 0;
+}
+.donation-show select option, .donation-show select{font-weight: bold;padding: 6px;margin-top: -3px;}
+
+.donation-show button
+{
+	width: 30%;
+	position: relative;
+	left: 0px;
+}
+
+#showTest
+{
+	padding: 25px 10px;
+	margin-bottom: 20px;
+	background: rgba(255, 255, 255, 1);
+	color: #000;
+	display: none;
+	position: relative;
+	right: 34px;
+	border: 10px solid rgb(6, 74, 3);
+}
+@media(max-width: 768px)
+{
+	.donation{right: 0;margin: 170px -12px 100px -12px;}
+	.donation img{height: 50px;width: 50px;}
+	.test_agree{top: 51px;right: -33px;width: 100%;font-size: 12px;}
+}
+@media(min-width: 768px) and (max-width: 1199px)
+{
+	.donation{left: 80%;}
+	.test_agree{right: -19px;width: 47%;top: 55px;}
+}
+/* End Style Of Donation Div */
+
+/* Start Style Of Search Donation */
+#search_page{background: rgba(0, 0, 0, 0.42);padding: 10px;margin: 0 -15px;height: 575px;overflow: scroll;}
+#search_page a{text-decoration: none;color: #fff;}
+#search_page #sickGblood, #search_page #donate_type {color: black;padding: 5px;margin: 5px;border-radius: 5px;}
+#search_page #city_search{padding: 5px;border-radius: 5px;margin-bottom: 5px;color: blue;}
+#search_page .search_result .table{margin-top:20px;background: rgba(0, 100, 0, 0.52);}
+#search_page .search_result .table thead{background: mediumvioletred;width: auto;}
+#search_page .search_result .table th,#search_page .search_result .table td{border:1px solid;text-align: center;flex-wrap: initial;}
+#search_page .search_result .table img{border-radius: 50%; margin: 0;display: inline-block;width: 50px;height: 50px;}
+#search_page .search_result .table tbody tr:hover{background: darkblue;}
+/* End Style Of Search Of Donation */
+
+/* Start Style Of Personal File For Client*/
+.head
+{
+	background: repeating-linear-gradient(45deg, #000000, transparent 35px);
+	padding: 5px;
+}
+.head .image{position: relative;top: -323px;}
+.head .image a{padding: 8px;}
+.head img{width: 25%;border-radius: 25px 0 25px;border: 4px solid #f89201;max-height: 295px;}
+.head .image i
+{
+	font-size: 20px;
+	padding: 12px;
+	border-radius: 10px 0 10px;
+	width: 45px;
+	height: 50px;
+	background: #f89201;
+	color: #050505;
+}
+.head .image i:hover{color: #fff;}
+.info{background: #fff;color: #000;padding: 10px;position: relative;left: -1300px;}
+.info h4{
+    padding: 15px;
+    border-radius: 15px 0;
+    border: 1px solid black;
+    background: #f89201;
+    line-height: 2;
+}
+.info a{text-decoration: none;margin: 10px 0;padding: 10px;}
+.info div
+{
+	width: 100%;
+	line-height: 2;
+	padding: 5px 0;
+	border: 1px solid;
+	border-color: transparent transparent #089ff5 transparent;
+}
+.info div:last-of-type{border-color:transparent;}
+.info input{width: 100%;}
+.info #showpass{
+    position: relative;
+    float: right;
+    border: 0;
+    background: unset;
+    top: -40px;
+    color: blue;
+    font-size: 18px;
+}
+@media(max-width: 768px)
+{
+	.head img{width: 40%;}
+	.info, .info h4,.info a{font-size: 12px;}	
+	.info #showpass{
+    top: -30px;
+}
+}
+/* start edit info Personal File For Client */
+#edit_personal_image{padding: 5px;margin: 5px;}
+.edit_image input {background: #d55e0b;border-radius: 4px;padding: 5px;margin-bottom: 5px;cursor: pointer;/* width: 100%; */}
+#show_person_edit{ background: #fff;}
+#show_person_edit input{width: 100%;color: #333;padding: 10px;}
+#show_person_edit button{ margin: 15px 0;}
+/* End Style Of Personal File For Client */
+/* Start Profile Of User Section */
+.show_user_profile{display: none;}
+.show_user_profile .head{
+    background: repeating-linear-gradient(45deg, #747f82, transparent 100px);
+}
+.show_user_profile .head .image{
+    top: 0;
+    margin: 0 auto;
+    width: 200px;
+}
+.show_user_profile .head .image img{  
+	width: 200px; 
+	height: 200px;
+	margin: 0 auto; 
+	border: unset;
+}
+.show_user_profile .info{
+    left: 0;
+} 
+/* End Profile Of User Section */
+/* Start Footer Section */
+.footer
+{
+    background: var(--maincolor);
+    text-align: center;
+    margin: 0 15px;
+    border: 10px solid #4ba59a;
+}
+.footer i{padding: 10px;background: green;border-radius: 4px;}
+.footer .slide-down-footer{display: none;padding: 16px;}
+.footer a
+{
+	text-decoration: none;
+	background: #dde3dc;
+	display: block;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 5px;
+}
+.footer a:hover{
+	background: #faf229;
+	transform: skewX(20deg);
+}
+.privacy_policy,.used_condition,.contact, .from_we
+{
+	border:1px solid #eee;
+	background: rgb(0, 0, 0, 0.81);
+	width: 60%;
+	margin: 0 auto;
+	padding: 5px;
+	direction: rtl;
+}
+
+.privacy_policy img , .used_condition img, .from_we img{width: 100%;height: 300px;}
+.privacy_policy p, .used_condition p, .from_we p{
+	color: #0a0b0b;
+	padding: 10px;
+	line-height: 2;
+	background: #eee;
+}
+.privacy_policy p strong , .used_condition p strong{
+	color: red;
+	font-size: 18px;
+}
+.contact h2, .privacy_policy h2 , .used_condition h2 , .from_we h2{
+    background: #f43b06;
+    padding: 10px;
+}
+.contact input,.contact textarea
+{
+	padding: 10px;
+	color: #333;
+	width: 100%;
+}
+.contact textarea{height: 200px; resize: none;}
+
+@media(max-width: 768px)
+{
+	.footer{margin: 0;}
+	.privacy_policy,.used_condition,.contact, .from_we{width: 100%;}
+}
+/* End Footer Section */
+/* start scroll to top */
+.up{
+	cursor: pointer;
+	background: #008000;
+	width: 50px;
+	height: 45px;
+	padding: 7px 0 0 4px;
+	border-radius: 50%;
+	text-align: center;
+	position: fixed;
+	right: 21px;
+	z-index: 9999;
+	bottom: 40px;
+	display: none;
+	}
+.up i{font-size: 2em;}
+.up:hover,.footer i:hover{background: #fff;color: #000;}
+@media(max-width: 768px)
+{
+	.up{width: 40px;height: 45px;padding: 13px;}
+	.up i{font-size: 1em;}
+}
+/* end scroll to top */

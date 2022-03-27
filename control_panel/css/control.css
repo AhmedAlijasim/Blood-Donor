@@ -1,0 +1,94 @@
+body{
+	background: repeating-linear-gradient(45deg, #000000, #074246 2px);
+	font-family:'NotoKufiArabic-Bold', sans-serif;
+	direction: var(--mainlang);
+	overflow-x: hidden;
+	font-size: 16px;
+	}
+/* Start Div Too Box  */
+:root
+{
+    --maincolor: rgb(51, 51, 51);
+    --mainlang:ltr;
+}
+.tool_box{margin: 60px 14px;position: fixed;z-index: 9;right: 0;color: #fff;}
+.tool_box .gear-check{
+    margin-left: -42px;
+    cursor: pointer;
+    padding: 2px;
+    background: var(--maincolor);
+    font-size: 3em;
+    float: left;
+}
+.tool_box .switch_colors,.tool_box .switch_languages{
+	margin-top: 1px;
+	display: none;
+	background: #32afb5;
+	width: max-content;
+	border: 4px solid var(--maincolor);
+	}
+.tool_box .switch_colors h5,.tool_box .switch_languages h5{padding:5px 0;margin: 0;}
+.tool_box .switch_colors ul,.tool_box .switch_languages ul{width: 160px;padding: 10px;}
+.tool_box .switch_colors ul li,.tool_box .switch_languages ul li{
+	display: inline-block;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.tool_box .switch_colors ul #color1{background: rgba(139, 0, 0, 0.55);}
+.tool_box .switch_colors ul #color2{background: rgba(0, 0, 139, 0.55);}
+.tool_box .switch_colors ul #color3{background: rgba(128, 0, 128, 0.55);}
+.tool_box .switch_colors ul #color4{background: rgba(53, 50, 50, 0.55);}
+
+/* Start Change The Language Of Site */
+.tool_box .switch_languages{margin-top: -4px;}
+.tool_box .switch_languages ul #arabic{background: #800080;padding: 10px;}
+.tool_box .switch_languages ul #english{background: #353232;padding: 10px;}
+/* End Change The Language Of Site */
+
+/* End Div Too Box */
+/* Start Style Of Register Admin Page   */
+.register{background-color: var(--maincolor);width: 85%;margin: 0 auto;padding: 10px 5px;display: none;color: chartreuse;}
+.register img{width: 15%;}
+.register .signup{margin-top: 25px;}
+.register label{text-align: center;margin-top: 8px;}
+.register input{color: #000;border-radius: 0 10px;padding: 10px 5px;border: 0;}
+#emailstatus, #pastatus{top: 10px;position: relative;}
+.register button{background: #ff006a;margin: 30px;}
+.register #showpass{ position: relative; float: right; top: -60px; margin-right: 0; font-size: 18px; background: unset; color: #ff006a; border: 0;}
+/* End Style Of Register Admin Page   */
+.navbar-inverse{background: var(--maincolor);}
+.navbar-nav{display: inline-flex;}
+.pre_notifi{position: relative;top: 60px;}
+.pre_notifi b{color: red;}
+.control_show{
+	background: whitesmoke;
+	padding: 5px;
+	margin: 60px 0;
+	display: none;
+	line-height: 2;
+	height: 500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.show_details{
+	background: #ddd;
+	position: relative;
+	top: 60px;
+	z-index: 1;
+	padding: 5px;
+	line-height: 2;
+	display: none;
+	height: 500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.posts_details .publish_label,.posts_details .publish_detail,.users_details .user_label,.users_details .user_detail{
+background: crimson; color: #fff; padding-left: 5px;
+}
+.posts_details a,.users_details a{ color: #000;}
+.posts_details .publish_label2, .users_details .user_label2{ margin-right: 0; margin-left: 0; }
+.posts_details .publish_label2:hover, .users_details .user_label2:hover{ background: chartreuse; }
+.posts_details .column_value, .users_details .column_value{background: #fff;margin: 2px 0;padding: 2px;}
+.users_details .column_value img{width: 100px;height: 100px;}

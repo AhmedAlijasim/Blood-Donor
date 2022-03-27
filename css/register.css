@@ -1,0 +1,51 @@
+/* Start Style Of Register Donor Page   */
+.register{background-color: var(--maincolor);width: 70%;margin: 0 auto;padding: 10px 5px;display: none;}
+.register img{width: 15%;}
+.register .signup{ margin-top: 25px;}
+.register label{text-align: center;margin-top: 8px;}
+.register input, .register select{color: #000;border-radius: 0 10px;padding: 10px 5px;border: 0;}
+.register .selectdate select{position: relative;left: -15px;border-radius: 0;border: 0;}
+#fnamestatus, #emailstatus, #pastatus, #mostatus, #costatus, #cistatus{font-size: 10px;}
+.register button{background: #ff006a;margin: 30px;}
+.register #showpass{
+    position: relative;
+    float: right;
+    top: -60px;
+    margin-right: 0;
+    font-size: 18px;
+    background: unset;
+    color: #ff006a;
+    border: 0;
+}
+.register .msgErrEmailPass{margin-top: -34px;}
+.register .link{margin: 5px;}
+.register .link a{color: #fff;text-decoration:none;}
+.forgot_password{
+    background: rgba(0, 0, 0, 0.75);
+    padding: 5px;
+    width: 80%;
+    margin: 224px auto;
+    border-radius: 35px 0;
+}
+.forgot_password label, .forgot_password input {width: 100%;text-align: center;display: inline-block;padding: 10px;font-weight: bold;border-radius: 6px;border: 0;}
+.forgot_password button{
+    width: 30%;
+    padding: 11px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 13px 0;
+    border: 0;
+    background: darkgoldenrod;
+    font-weight: bold;
+}
+/* Start Edit Media Query */
+@media (max-width: 768px){
+	.register{width: auto;}
+	.register label{padding: 0;text-align: unset;}
+	.container {padding-right: 0px;padding-left: 0;}
+	.forgot_password{
+    width: 100%;
+    border-radius: 35px 0;
+}
+}
+/* End Style Of Register Donor Page   */
